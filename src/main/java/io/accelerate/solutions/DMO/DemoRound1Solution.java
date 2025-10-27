@@ -18,7 +18,12 @@ public class DemoRound1Solution {
     }
 
     public int countLines(String text) {
-        throw new SolutionNotImplementedException();
+        if (text == null || text.isEmpty()) {
+            return 0;
+        }
+        String[] lines = text.split("\r?\n|\r");
+        return lines.length;
     }
 }
+
 

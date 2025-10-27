@@ -6,10 +6,7 @@ import java.util.List;
 
 public class DemoRound2Solution {
     public int arraySum(List<Integer> integerList) {
-        int sum = 0;
-        for (int i = 0; i < integerList.size(); i++) {
 
-        }
     }
 
     public List<Integer> intRange(int start, int end) {
@@ -20,3 +17,4 @@ public class DemoRound2Solution {
         throw new SolutionNotImplementedException();
     }
 }
+

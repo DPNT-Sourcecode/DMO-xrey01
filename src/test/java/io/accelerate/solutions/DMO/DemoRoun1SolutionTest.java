@@ -26,7 +26,8 @@ public class DemoRoun1SolutionTest {
 
     @Test
     void whenLetterToSanta() {
-        assertThat(round1Solution.letterToSanta(), hasItems("dear", "santa"));
+        assertThat(round1Solution.letterToSanta(), allOf(containsStringIgnoringCase("dear"), containsStringIgnoringCase("santa")));
     }
 }
+
 

@@ -32,7 +32,7 @@ public class DemoRound3SolutionTest {
     }
 
     @Test
-    void whenItemsHaveSameNameButSkuIsDifferent() {
+    void whenItemsHaveSameNameButSkuIsDifferentThenReturnSizeAsTwo() {
         InventoryItem item = new InventoryItem("SKU001", "Gadget", 2500);
         InventoryItem item2 = new InventoryItem("SKU002", "Gadget", 2500);
 
@@ -41,5 +41,17 @@ public class DemoRound3SolutionTest {
 
         assertThat(round3Solution.inventorySize(), equalTo(2));
     }
+
+    @Test
+    void whenItemsAreAddedWithSameSkuThenReturnSizeAsOne() {
+        InventoryItem item = new InventoryItem("SKU001", "Gadget", 2500);
+        InventoryItem item2 = new InventoryItem("SKU001", "Gadget", 2500);
+
+        round3Solution.inventoryAdd(item, 10);
+        round3Solution.inventoryAdd(item2, 1);
+
+        assertThat(round3Solution.inventorySize(), equalTo(1));
+    }
 }
+
 

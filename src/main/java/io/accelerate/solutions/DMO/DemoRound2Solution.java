@@ -2,6 +2,7 @@ package io.accelerate.solutions.DMO;
 
 import io.accelerate.runner.SolutionNotImplementedException;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class DemoRound2Solution {
@@ -14,13 +15,18 @@ public class DemoRound2Solution {
     }
 
     public List<Integer> intRange(int start, int end) {
-        throw new SolutionNotImplementedException();
+        List<Integer> result = new ArrayList<>();
+        for (int i = start; i < end; i++) {
+            result.add(i);
+        }
+        return result;
     }
 
     public List<Integer> filterPass(List<Integer> integerList, int threshold) {
         throw new SolutionNotImplementedException();
     }
 }
+
 
 
 

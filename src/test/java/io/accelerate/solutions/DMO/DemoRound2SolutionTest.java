@@ -62,47 +62,47 @@ public class DemoRound2SolutionTest
         assertThat(result.get(0), equalTo(1));
         assertThat(result.get(9), equalTo(10));
     }
-//
-//    // Filter Pass Tests
-//    @Test
-//    void whenFilterPassWithThreshold() {
-//        assertThat(solution.filterPass(List.of(1, 5, 10, 3, 7), 5),
-//                   equalTo(List.of(5, 10, 7)));
-//    }
-//
-//    @Test
-//    void whenFilterPassWithAllPassing() {
-//        assertThat(solution.filterPass(List.of(10, 20, 30), 5),
-//                   equalTo(List.of(10, 20, 30)));
-//    }
-//
-//    @Test
-//    void whenFilterPassWithNonePassing() {
-//        assertThat(solution.filterPass(List.of(1, 2, 3), 10),
-//                   equalTo(List.of()));
-//    }
-//
-//    @Test
-//    void whenFilterPassWithNegativeNumbers() {
-//        assertThat(solution.filterPass(List.of(-5, 0, 5, -10, 10), 0),
-//                   equalTo(List.of(0, 5, 10)));
-//    }
-//
-//    @Test
-//    void whenFilterPassWithEmptyList() {
-//        assertThat(solution.filterPass(List.of(), 5), equalTo(List.of()));
-//    }
-//
-//    @Test
-//    void whenFilterPassWithExactThreshold() {
-//        assertThat(solution.filterPass(List.of(5, 5, 5), 5),
-//                   equalTo(List.of(5, 5, 5)));
-//    }
-//
-//    @Test
-//    void whenFilterPassPreservesOrder() {
-//        assertThat(solution.filterPass(List.of(3, 9, 2, 8, 1, 7), 5),
-//                   equalTo(List.of(9, 8, 7)));
-//    }
+
+    @Test
+    void whenFilterPassWithThreshold() {
+        assertThat(solution.filterPass(List.of(1, 5, 10, 3, 7), 5),
+                   equalTo(List.of(5, 10, 7)));
+    }
+
+    @Test
+    void whenFilterPassWithAllPassing() {
+        assertThat(solution.filterPass(List.of(10, 20, 30), 5),
+                   equalTo(List.of(10, 20, 30)));
+    }
+
+    @Test
+    void whenFilterPassWithNonePassing() {
+        assertThat(solution.filterPass(List.of(1, 2, 3), 10),
+                   equalTo(List.of()));
+    }
+
+    @Test
+    void whenFilterPassWithNegativeNumbers() {
+        assertThat(solution.filterPass(List.of(-5, 0, 5, -10, 10), 0),
+                   equalTo(List.of(0, 5, 10)));
+    }
+
+    @Test
+    void whenFilterPassWithEmptyList() {
+        assertThat(solution.filterPass(List.of(), 5), equalTo(List.of()));
+    }
+
+    @Test
+    void whenFilterPassWithExactThreshold() {
+        assertThat(solution.filterPass(List.of(5, 5, 5), 5),
+                   equalTo(List.of(5, 5, 5)));
+    }
+
+    @Test
+    void whenFilterPassPreservesOrder() {
+        assertThat(solution.filterPass(List.of(3, 9, 2, 8, 1, 7), 5),
+                   equalTo(List.of(9, 8, 7)));
+    }
 }
+
 

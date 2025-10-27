@@ -5,6 +5,11 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 class Waves {
+    private static final String WAVE_PATTERN = "____....~~~~''''~~~~....____";
+    private static final int TOTAL_SEGMENTS = 7;
+    private static final int SEGMENT_SIZE = 4;
+    private static final int MAX_ITERATIONS = 99999;
+
     @FunctionalInterface
     interface InputProviderScalar {
         float fetch();
@@ -133,7 +138,7 @@ class Waves {
 
         mainLoop: while (true) {
             iterations += 1;
-            if (iterations > 99999) {
+            if (iterations > MAX_ITERATIONS) {
                 output.print("INFINITE LOOP DETECTED. STOPPING EXECUTION.");output.println();
                 break mainLoop;
             }
@@ -158,9 +163,9 @@ class Waves {
                 //3W$="____....~~~~''''~~~~....____":E=7:MS=4
                 case 3:
                     label = 4;
-                    stringW = "____....~~~~''''~~~~....____";
-                    scalarE = 7;
-                    scalarMS = 4;
+                    stringW = WAVE_PATTERN;
+                    scalarE = TOTAL_SEGMENTS;
+                    scalarMS = SEGMENT_SIZE;
                     break;
                 //4L=LEN(W$)
                 case 4:
@@ -230,5 +235,6 @@ class Waves {
         }
     }
 }
+
 
 

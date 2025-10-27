@@ -26,9 +26,10 @@ public class DemoRoun1SolutionTest {
 
     @Test
     void whenLetterToSanta() {
-        assertThat(round1Solution.letterToSanta(), containsInAnyOrder("Dear", "Santa"));
+        assertThat(round1Solution.letterToSanta(), );
     }
 }
+
 
 
 

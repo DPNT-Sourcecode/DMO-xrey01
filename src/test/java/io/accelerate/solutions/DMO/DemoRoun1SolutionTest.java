@@ -15,9 +15,14 @@ public class DemoRoun1SolutionTest {
 
 
     @Test
-    void name() {
+    void incrementInt() {
         assertThat(round1Solution.increment(1), equalTo(2));
     }
 
+    @Test
+    void whenTextThenUppercase() {
+        assertThat(round1Solution.toUppercase("hello"), equalTo("HELLO"));
+    }
 }
+
 

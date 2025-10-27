@@ -2,13 +2,15 @@ package io.accelerate.solutions.DMO;
 
 import io.accelerate.runner.SolutionNotImplementedException;
 
+import java.util.Locale;
+
 public class DemoRound1Solution {
     public int increment(int x) {
-        return x++;
+        return ++x;
     }
 
     public String toUppercase(String text) {
-        throw new SolutionNotImplementedException();
+        return text.toUpperCase(Locale.ROOT);
     }
 
     public String letterToSanta() {
@@ -19,4 +21,5 @@ public class DemoRound1Solution {
         throw new SolutionNotImplementedException();
     }
 }
+
 

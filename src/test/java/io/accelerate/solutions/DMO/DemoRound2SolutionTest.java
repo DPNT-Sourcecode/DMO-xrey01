@@ -104,5 +104,3 @@ public class DemoRound2SolutionTest
                    equalTo(List.of(9, 8, 7)));
     }
 }
-
-

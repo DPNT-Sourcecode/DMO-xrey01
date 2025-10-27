@@ -32,8 +32,3 @@ public class DemoRound2Solution {
         return result;
     }
 }
-
-
-
-
-

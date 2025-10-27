@@ -7,8 +7,8 @@ import java.util.List;
 public class DemoRound2Solution {
     public int arraySum(List<Integer> integerList) {
         int sum = 0;
-        for (int i = 0; i < integerList.size(); i++) {
-            sum += integerList.get(i);
+        for (Integer integer : integerList) {
+            sum += integer;
         }
         return sum;
     }
@@ -21,5 +21,6 @@ public class DemoRound2Solution {
         throw new SolutionNotImplementedException();
     }
 }
+
 
 

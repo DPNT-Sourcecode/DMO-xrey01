@@ -14,10 +14,11 @@ public class DemoRound1Solution {
     }
 
     public String letterToSanta() {
-        throw new SolutionNotImplementedException();
+        return "Dear Santa, I would like a puppy";
     }
 
     public int countLines(String text) {
         throw new SolutionNotImplementedException();
     }
 }
+

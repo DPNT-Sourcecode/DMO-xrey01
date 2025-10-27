@@ -24,12 +24,22 @@ public class DemoRound3SolutionTest {
     void whenUpdatingExistingItemThenReturnTotalQuantity() {
         InventoryItem item = new InventoryItem("SKU002", "Gadget", 2500);
 
-        // Add initial quantity
         int firstAdd = round3Solution.inventoryAdd(item, 10);
         assertThat(firstAdd, equalTo(10));
 
-        // Update with additional quantity
         int secondAdd = round3Solution.inventoryAdd(item, 5);
         assertThat(secondAdd, equalTo(15));
     }
+
+    @Test
+    void whenItemsHaveSameNameButSkuIsDifferent() {
+        InventoryItem item = new InventoryItem("SKU001", "Gadget", 2500);
+        InventoryItem item2 = new InventoryItem("SKU002", "Gadget", 2500);
+
+        round3Solution.inventoryAdd(item, 10);
+        round3Solution.inventoryAdd(item2, 9);
+
+        assertThat(round3Solution.inventorySize(), equalTo(2));
+    }
 }
+

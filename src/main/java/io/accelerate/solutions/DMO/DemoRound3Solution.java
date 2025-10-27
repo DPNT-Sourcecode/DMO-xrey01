@@ -15,12 +15,13 @@ public class DemoRound3Solution {
     }
 
     public int inventorySize() {
-        throw new SolutionNotImplementedException();
+        return inventory.size();
     }
 
     public InventoryItem inventoryGet(String sku) {
         throw new SolutionNotImplementedException();
     }
 }
+
 
 

@@ -30,39 +30,38 @@ public class DemoRound2SolutionTest
         assertThat(solution.arraySum(List.of()), equalTo(0));
     }
 
-//    // Int Range Tests
-//    @Test
-//    void whenIntRangeWithPositiveRange() {
-//        assertThat(solution.intRange(1, 5), equalTo(List.of(1, 2, 3, 4)));
-//    }
-//
-//    @Test
-//    void whenIntRangeWithZeroStart() {
-//        assertThat(solution.intRange(0, 3), equalTo(List.of(0, 1, 2)));
-//    }
-//
-//    @Test
-//    void whenIntRangeWithSingleElement() {
-//        assertThat(solution.intRange(5, 6), equalTo(List.of(5)));
-//    }
-//
-//    @Test
-//    void whenIntRangeWithNegativeStart() {
-//        assertThat(solution.intRange(-3, 2), equalTo(List.of(-3, -2, -1, 0, 1)));
-//    }
-//
-//    @Test
-//    void whenIntRangeWithEqualStartAndEnd() {
-//        assertThat(solution.intRange(5, 5), equalTo(List.of()));
-//    }
-//
-//    @Test
-//    void whenIntRangeWithLargeRange() {
-//        List<Integer> result = solution.intRange(1, 11);
-//        assertThat(result, hasSize(10));
-//        assertThat(result.get(0), equalTo(1));
-//        assertThat(result.get(9), equalTo(10));
-//    }
+    @Test
+    void whenIntRangeWithPositiveRange() {
+        assertThat(solution.intRange(1, 5), equalTo(List.of(1, 2, 3, 4)));
+    }
+
+    @Test
+    void whenIntRangeWithZeroStart() {
+        assertThat(solution.intRange(0, 3), equalTo(List.of(0, 1, 2)));
+    }
+
+    @Test
+    void whenIntRangeWithSingleElement() {
+        assertThat(solution.intRange(5, 6), equalTo(List.of(5)));
+    }
+
+    @Test
+    void whenIntRangeWithNegativeStart() {
+        assertThat(solution.intRange(-3, 2), equalTo(List.of(-3, -2, -1, 0, 1)));
+    }
+
+    @Test
+    void whenIntRangeWithEqualStartAndEnd() {
+        assertThat(solution.intRange(5, 5), equalTo(List.of()));
+    }
+
+    @Test
+    void whenIntRangeWithLargeRange() {
+        List<Integer> result = solution.intRange(1, 11);
+        assertThat(result, hasSize(10));
+        assertThat(result.get(0), equalTo(1));
+        assertThat(result.get(9), equalTo(10));
+    }
 //
 //    // Filter Pass Tests
 //    @Test
@@ -106,3 +105,4 @@ public class DemoRound2SolutionTest
 //                   equalTo(List.of(9, 8, 7)));
 //    }
 }
+

@@ -23,9 +23,16 @@ public class DemoRound2Solution {
     }
 
     public List<Integer> filterPass(List<Integer> integerList, int threshold) {
-        throw new SolutionNotImplementedException();
+        List<Integer> result = new ArrayList<>();
+        for (Integer value : integerList) {
+            if (value >= threshold) {
+                result.add(value);
+            }
+        }
+        return result;
     }
 }
+
 
 
 

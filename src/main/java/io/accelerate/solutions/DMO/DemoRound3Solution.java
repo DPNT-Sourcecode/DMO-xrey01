@@ -19,9 +19,10 @@ public class DemoRound3Solution {
     }
 
     public InventoryItem inventoryGet(String sku) {
-        throw new SolutionNotImplementedException();
+        inventory.get(sku);
     }
 }
+
 
 
 

@@ -52,6 +52,26 @@ public class DemoRound3SolutionTest {
 
         assertThat(round3Solution.inventorySize(), equalTo(1));
     }
+
+    @Test
+    void whenGetExistingItemThenReturnFullDetails() {
+        InventoryItem item = new InventoryItem("SKU123", "Premium Widget", 5000);
+        round3Solution.inventoryAdd(item, 20);
+
+        InventoryItem result = round3Solution.inventoryGet("SKU123");
+
+        assertThat(result, notNullValue());
+        assertThat(result.sku(), equalTo("SKU123"));
+        assertThat(result.name(), equalTo("Premium Widget"));
+        assertThat(result.price(), equalTo(5000));
+    }
+
+    @Test
+    void whenGetMissingItemThenReturnNull() {
+        InventoryItem result = round3Solution.inventoryGet("NONEXISTENT");
+        assertThat(result, nullValue());
+    }
 }
+
 
 

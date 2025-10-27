@@ -4,7 +4,7 @@ import io.accelerate.runner.SolutionNotImplementedException;
 
 public class DemoRound1Solution {
     public int increment(int x) {
-        throw new SolutionNotImplementedException();
+        return x++;
     }
 
     public String toUppercase(String text) {
@@ -19,3 +19,4 @@ public class DemoRound1Solution {
         throw new SolutionNotImplementedException();
     }
 }
+

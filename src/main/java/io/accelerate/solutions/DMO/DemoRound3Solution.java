@@ -23,9 +23,3 @@ public class DemoRound3Solution {
         return items.get(sku);
     }
 }
-
-
-
-
-
-

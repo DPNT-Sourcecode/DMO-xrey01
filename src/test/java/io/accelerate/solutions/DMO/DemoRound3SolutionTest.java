@@ -72,6 +72,3 @@ public class DemoRound3SolutionTest {
         assertThat(result, nullValue());
     }
 }
-
-
-

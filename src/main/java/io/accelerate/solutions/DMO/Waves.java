@@ -159,6 +159,7 @@ class Waves {
                 case 3:
                     label = 4;
                     stringW = "____....~~~~''''~~~~....____";
+                    scalarE = 7;
                     scalarMS = 4;
                     break;
                 //4L=LEN(W$)
@@ -229,4 +230,5 @@ class Waves {
         }
     }
 }
+
 

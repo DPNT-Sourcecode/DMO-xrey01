@@ -21,5 +21,3 @@ public class DemoRound1Solution {
         throw new SolutionNotImplementedException();
     }
 }
-
-

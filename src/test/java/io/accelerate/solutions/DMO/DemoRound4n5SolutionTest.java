@@ -45,10 +45,11 @@ public class DemoRound4n5SolutionTest
     }
 
     @Test
-    void whenWavesWithThreeWaves() {
-        String result = solution.waves(3);
-        assertThat(result, equalTo("_.~'~.__.~'~.__.~'~._"));
+    void whenWavesOriginalOutput() {
+        String result = solution.originalWaves(3);
+        assertThat(result, equalTo("WAVES\nTYPE IN HOW MANY WAVES TO DRAW AS A NUMBER BETWEEN 1 AND 4?\n\n_.~'~.__.~'~.__.~'~._\n"));
     }
 }
+
 
 

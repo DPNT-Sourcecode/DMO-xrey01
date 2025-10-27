@@ -3,7 +3,7 @@ package io.accelerate.solutions.DMO;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.*;
 
 public class DemoRoun1SolutionTest {
     private DemoRound1Solution round1Solution;
@@ -23,6 +23,12 @@ public class DemoRoun1SolutionTest {
     void whenTextThenUppercase() {
         assertThat(round1Solution.toUppercase("hello"), equalTo("HELLO"));
     }
+
+    @Test
+    void whenLetterToSanta() {
+        assertThat(round1Solution.letterToSanta(), containsInAnyOrder("Dear", "Santa"));
+    }
 }
+
 
 

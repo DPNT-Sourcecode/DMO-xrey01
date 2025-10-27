@@ -40,7 +40,3 @@ public class DemoRoun1SolutionTest {
         assertThat(round1Solution.countLines(multiLineText), equalTo(4));
     }
 }
-
-
-
-

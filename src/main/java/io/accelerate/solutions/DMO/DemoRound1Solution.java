@@ -25,5 +25,3 @@ public class DemoRound1Solution {
         return lines.length;
     }
 }
-
-

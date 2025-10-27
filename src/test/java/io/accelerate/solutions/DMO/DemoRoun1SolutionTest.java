@@ -28,7 +28,19 @@ public class DemoRoun1SolutionTest {
     void whenLetterToSanta() {
         assertThat(round1Solution.letterToSanta(), allOf(containsString("Dear"), containsString("Santa")));
     }
+
+    @Test
+    void whenCountLinesThenReturnNumberOfLines() {
+        String multiLineText = """
+                Line 1
+                Line 2
+                Line 3
+                Line 4
+                """;
+        assertThat(round1Solution.countLines(multiLineText), equalTo(4));
+    }
 }
+
 
 
 

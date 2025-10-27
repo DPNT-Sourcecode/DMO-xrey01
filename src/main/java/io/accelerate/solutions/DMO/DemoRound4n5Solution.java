@@ -11,12 +11,6 @@ public class DemoRound4n5Solution {
 
         String fullOutput = outputSink.content();
         String[] lines = fullOutput.split(System.lineSeparator());
-
-        // The wave pattern is on the 4th line (index 3)
-        // Line 0: "WAVES"
-        // Line 1: "TYPE IN HOW MANY WAVES TO DRAW AS A NUMBER BETWEEN 1 AND 4?"
-        // Line 2: empty (from input)
-        // Line 3: the actual wave pattern
         if (lines.length > 3) {
             return lines[3];
         }
@@ -25,6 +19,7 @@ public class DemoRound4n5Solution {
     }
 
 }
+
 
 
 

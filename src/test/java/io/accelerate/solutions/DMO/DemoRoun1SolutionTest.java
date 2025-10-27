@@ -26,6 +26,7 @@ public class DemoRoun1SolutionTest {
 
     @Test
     void whenLetterToSanta() {
-        assertThat(round1Solution.letterToSanta(), hasItem("Dear"));
+        assertThat(round1Solution.letterToSanta(), hasItems("dear", "santa"));
     }
 }
+

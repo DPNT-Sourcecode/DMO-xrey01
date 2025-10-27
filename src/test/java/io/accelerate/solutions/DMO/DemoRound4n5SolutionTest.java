@@ -29,7 +29,26 @@ public class DemoRound4n5SolutionTest
     @Test
     void whenWavesWithOneWaves() {
         String result = solution.waves(1);
-        assertThat(result, equalTo("____....~~~~''''~~~~....___"));
+        assertThat(result, equalTo("____....~~~~''''~~~~....____"));
+    }
+
+    @Test
+    void whenWavesWithTwoWaves() {
+        String result = solution.waves(2);
+        assertThat(result, equalTo("__..~~''~~..____..~~''~~..__"));
+    }
+
+    @Test
+    void whenWavesWithThreeWaves() {
+        String result = solution.waves(3);
+        assertThat(result, equalTo("_.~'~.__.~'~.__.~'~._"));
+    }
+
+    @Test
+    void whenWavesWithThreeWaves() {
+        String result = solution.waves(3);
+        assertThat(result, equalTo("_.~'~.__.~'~.__.~'~._"));
     }
 }
+
 

@@ -21,17 +21,15 @@ public class DemoRound4n5SolutionTest
     }
 
     @Test
-    void printFullOutputForGoldenMaster() {
-        for (int i = 1; i <= 4; i++) {
-            Waves.StringOutputSink outputSink = new Waves.StringOutputSink();
-            int waves = i;
-            Waves.InputProviderScalar inputProvider = () -> (float) waves;
-            Waves.run(outputSink, inputProvider);
-            String output = outputSink.content();
-            System.out.println("=== OUTPUT FOR " + i + " WAVE(S) ===");
-            System.out.println(output);
-            System.out.println("=== END ===");
-            System.out.println();
-        }
+    void whenWavesWithZeroWaves() {
+        String result = solution.waves(0);
+        assertThat(result, equalTo(""));
+    }
+
+    @Test
+    void whenWavesWithOneWaves() {
+        String result = solution.waves(1);
+        assertThat(result, equalTo("____....~~~~''''~~~~....___"));
     }
 }
+

@@ -6,10 +6,11 @@ public class DemoRound4n5Solution {
     
     public String waves(Integer numberOfWaves) {
         Waves.StringOutputSink outputSink = new Waves.StringOutputSink();
-        Waves.InputProviderScalar inputProvider = () -> numberOfWaves.floatValue();
+        Waves.InputProviderScalar inputProvider = numberOfWaves::floatValue;
         Waves.run(outputSink, inputProvider);
         return outputSink.content();
     }
 
 }
+
 
